@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <!DOCTYPE html>
+    <html lang="id">
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend><b>Biodata Pribadi</b></legend>
+            <br>
+            
+            <label for="">Nama Depan</label>
+            <input type="text" name="fullname" required maxlength="20">
+            <br>
+            <label for="">Nama Belakang</label>
+            <input type="text" name="fullname" required maxlength="20">
+            <br>
+            <label for=""> Jenis Kelamin</label>
+            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan"> <b>Perempuan</b> 
+            <br>
+            <input type="radio" id="laki-laki" name="jenisKelamin" value="Laki-laki"> <b>Laki-laki</b>
+            
+            <br>
+            <label>Tempat Lahir</label>
+            <input type="text" name="fullname" required maxlength="20">
+            <br>
+            <label>Tanggal Lahir</label>
+            <input type="date" name="date" required>
+            <br>
+            <br>
+        </fieldset>
+        
+        <br>
+        <br>
+
+        <fieldset>
+            <Legend><b>Alamat Lengkap</b></Legend>
+            <br>
+
+           <label>Provinsi</label>
+            <select name="pilihProvinsi">
+                <option value="aceh">Aceh</option>
+                <option value="sumut">Sumatera Utara</option>
+                <option value="sumbar">Sumatera Barat</option>
+                <option value="riau">Riau</option>
+                <option value="kepri">Kepulauan Riau</option>
+                <option value="jambi">Jambi</option>
+                <option value="bengkulu">Bengkulu</option>
+                <option value="sumsel">Sumatera Selatan</option>
+                <option value="babel">Bangka Belitung</option>
+                <option value="lampung">Lampung</option>
+                <option value="banten">Banten</option>
+                <option value="jakarta">DKI Jakarta</option>
+                <option value="jabar">Jawa Barat</option>
+                <option value="jateng">Jawa Tengah</option>
+                <option value="yogyakarta">DI Yogyakarta</option>
+                <option value="jatim">Jawa Timur</option>
+                <option value="bali">Bali</option>
+                <option value="ntb">Nusa Tenggara Barat</option>
+                <option value="ntt">Nusa Tenggara Timur</option>
+                <option value="kalbar">Kalimantan Barat</option>
+                <option value="kalteng">Kalimantan Tengah</option>
+                <option value="kalsel">Kalimantan Selatan</option>
+                <option value="kaltim">Kalimantan Timur</option>
+                <option value="kalut">Kalimantan Utara</option>
+                <option value="sulut">Sulawesi Utara</option>
+                <option value="gorontalo">Gorontalo</option>
+                <option value="sulteng">Sulawesi Tengah</option>
+                <option value="sulbar">Sulawesi Barat</option>
+                <option value="sulsel">Sulawesi Selatan</option>
+                <option value="sultenggara">Sulawesi Tenggara</option>
+                <option value="maluku">Maluku</option>
+                <option value="malut">Maluku Utara</option>
+                <option value="papua">Papua</option>
+                <option value="pabar">Papua Barat</option>
+                <option value="pasel">Papua Selatan</option>
+                <option value="pateng">Papua Tengah</option>
+                <option value="papegunungan">Papua Pegunungan</option>
+                <option value="pabardaya">Papua Barat Daya</option>
+            </select>
+
+            <br>
+
+           <label>Kota</label>
+            <select name="pilihKota">
+                <!-- Provinsi Aceh -->
+                <option value="banda_aceh">Banda Aceh</option>
+                <option value="langsa">Langsa</option>
+                <option value="lhokseumawe">Lhokseumawe</option>
+                <option value="sabang">Sabang</option>
+                <option value="subulussalam">Subulussalam</option>
+
+                <!-- Provinsi Sumatera Utara -->
+                <option value="binjai">Binjai</option>
+                <option value="gunungsitoli">Gunungsitoli</option>
+                <option value="medan">Medan</option>
+                <option value="padang_sidempuan">Padang Sidempuan</option>
+                <option value="pematangsiantar">Pematangsiantar</option>
+                <option value="sibolga">Sibolga</option>
+                <option value="tanjung_balai">Tanjung Balai</option>
+                <option value="tebing_tinggi">Tebing Tinggi</option>
+
+                <!-- Provinsi Sumatera Barat -->
+                <option value="bukittinggi">Bukittinggi</option>
+                <option value="padang">Padang</option>
+                <option value="padang_panjang">Padang Panjang</option>
+                <option value="pariaman">Pariaman</option>
+                <option value="payakumbuh">Payakumbuh</option>
+                <option value="sawahlunto">Sawahlunto</option>
+                <option value="solok">Solok</option>
+
+                <!-- Provinsi Riau -->
+                <option value="dumai">Dumai</option>
+                <option value="pekanbaru">Pekanbaru</option>
+
+                <!-- Provinsi Kepulauan Riau -->
+                <option value="batam">Batam</option>
+                <option value="tanjungpinang">Tanjungpinang</option>
+
+                <!-- Provinsi Jambi -->
+                <option value="jambi">Jambi</option>
+                <option value="sungai_penuh">Sungai Penuh</option>
+
+                <!-- Provinsi Sumatera Selatan -->
+                <option value="lubuklinggau">Lubuklinggau</option>
+                <option value="pagar_alam">Pagar Alam</option>
+                <option value="palembang">Palembang</option>
+                <option value="prabumulih">Prabumulih</option>
+
+                <!-- Provinsi Bengkulu -->
+                <option value="bengkulu">Bengkulu</option>
+
+                <!-- Provinsi Lampung -->
+                <option value="bandar_lampung">Bandar Lampung</option>
+                <option value="metro">Metro</option>
+
+                <!-- Provinsi Bangka Belitung -->
+                <option value="pangkalpinang">Pangkalpinang</option>
+
+                <!-- Provinsi Banten -->
+                <option value="cilegon">Cilegon</option>
+                <option value="serang">Serang</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="tangerang_selatan">Tangerang Selatan</option>
+
+                <!-- Provinsi DKI Jakarta -->
+                <option value="jakarta_barat">Jakarta Barat</option>
+                <option value="jakarta_pusat">Jakarta Pusat</option>
+                <option value="jakarta_selatan">Jakarta Selatan</option>
+                <option value="jakarta_timur">Jakarta Timur</option>
+                <option value="jakarta_utara">Jakarta Utara</option>
+
+                <!-- Provinsi Jawa Barat -->
+                <option value="bandung">Bandung</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bogor">Bogor</option>
+                <option value="cimahi">Cimahi</option>
+                <option value="cirebon">Cirebon</option>
+                <option value="depok">Depok</option>
+                <option value="sukabumi">Sukabumi</option>
+                <option value="tasikmalaya">Tasikmalaya</option>
+                <option value="banjar">Banjar</option>
+
+                <!-- Provinsi Jawa Tengah -->
+                <option value="magelang">Magelang</option>
+                <option value="pekalongan">Pekalongan</option>
+                <option value="salatiga">Salatiga</option>
+                <option value="semarang">Semarang</option>
+                <option value="surakarta">Surakarta</option>
+                <option value="tegal">Tegal</option>
+
+                <!-- Provinsi DI Yogyakarta -->
+                <option value="yogyakarta">Yogyakarta</option>
+
+                <!-- Provinsi Jawa Timur -->
+                <option value="batu">Batu</option>
+                <option value="blitar">Blitar</option>
+                <option value="kediri">Kediri</option>
+                <option value="madiun">Madiun</option>
+                <option value="malang">Malang</option>
+                <option value="mojokerto">Mojokerto</option>
+                <option value="pasuruan">Pasuruan</option>
+                <option value="probolinggo">Probolinggo</option>
+                <option value="surabaya">Surabaya</option>
+
+                <!-- Provinsi Bali -->
+                <option value="denpasar">Denpasar</option>
+
+                <!-- Provinsi Nusa Tenggara Barat -->
+                <option value="bima">Bima</option>
+                <option value="mataram">Mataram</option>
+
+                <!-- Provinsi Nusa Tenggara Timur -->
+                <option value="kupang">Kupang</option>
+
+                <!-- Provinsi Kalimantan Barat -->
+                <option value="pontianak">Pontianak</option>
+                <option value="singkawang">Singkawang</option>
+
+                <!-- Provinsi Kalimantan Tengah -->
+                <option value="palangka_raya">Palangka Raya</option>
+
+                <!-- Provinsi Kalimantan Selatan -->
+                <option value="banjarbaru">Banjarbaru</option>
+                <option value="banjarmasin">Banjarmasin</option>
+
+                <!-- Provinsi Kalimantan Timur -->
+                <option value="balikpapan">Balikpapan</option>
+                <option value="bontang">Bontang</option>
+                <option value="samarinda">Samarinda</option>
+
+                <!-- Provinsi Kalimantan Utara -->
+                <option value="tarakan">Tarakan</option>
+
+                <!-- Provinsi Sulawesi Utara -->
+                <option value="bitung">Bitung</option>
+                <option value="kotamobagu">Kotamobagu</option>
+                <option value="manado">Manado</option>
+                <option value="tomohon">
+            </select>
+
+           <br>
+
+            <label>Kecamatan</label>
+            <select name="pilihKecamatan">
+                <!-- Provinsi Aceh -->
+                <option value="banda_raya">Banda Raya</option>
+                <option value="kuta_alam">Kuta Alam</option>
+                <option value="lueng_bata">Lueng Bata</option>
+
+                <!-- Provinsi Sumatera Utara -->
+                <option value="medan_barat">Medan Barat</option>
+                <option value="medan_tembung">Medan Tembung</option>
+                <option value="medan_perjuangan">Medan Perjuangan</option>
+
+                <!-- Provinsi Sumatera Barat -->
+                <option value="pauh">Pauh</option>
+                <option value="kuranji">Kuranji</option>
+                <option value="lubuk_begalung">Lubuk Begalung</option>
+
+                <!-- Provinsi Riau -->
+                <option value="marpoyan_damai">Marpoyan Damai</option>
+                <option value="sail">Sail</option>
+                <option value="payung_sekaki">Payung Sekaki</option>
+
+                <!-- Provinsi Kepulauan Riau -->
+                <option value="batu_ampar">Batu Ampar</option>
+                <option value="lubuk_baja">Lubuk Baja</option>
+                <option value="sekuneng">Sekuneng</option>
+
+                <!-- Provinsi Jambi -->
+                <option value="danau_teluk">Danau Teluk</option>
+                <option value="jelutung">Jelutung</option>
+                <option value="telanaipura">Telanaipura</option>
+
+                <!-- Provinsi Sumatera Selatan -->
+                <option value="ilir_timur">Ilir Timur</option>
+                <option value="seberang_ulu">Seberang Ulu</option>
+                <option value="sukarami">Sukarami</option>
+
+                <!-- Provinsi Bengkulu -->
+                <option value="gading_cempaka">Gading Cempaka</option>
+                <option value="sungai_serut">Sungai Serut</option>
+                <option value="ratu_agung">Ratu Agung</option>
+
+                <!-- Provinsi Lampung -->
+                <option value="kedaton">Kedaton</option>
+                <option value="raja_basa">Raja Basa</option>
+                <option value="tanjung_karang">Tanjung Karang</option>
+
+                <!-- Provinsi Banten -->
+                <option value="serpong">Serpong</option>
+                <option value="ciputat">Ciputat</option>
+                <option value="karawaci">Karawaci</option>
+
+                <!-- Provinsi DKI Jakarta -->
+                <option value="gambir">Gambir</option>
+                <option value="menteng">Menteng</option>
+                <option value="kelapa_gading">Kelapa Gading</option>
+
+                <!-- Provinsi Jawa Barat -->
+                <option value="cimahi_utara">Cimahi Utara</option>
+                <option value="sukasari">Sukasari</option>
+                <option value="cibiru">Cibiru</option>
+
+                <!-- Provinsi Jawa Tengah -->
+                <option value="banyumanik">Banyumanik</option>
+                <option value="candisari">Candisari</option>
+                <option value="pedurungan">Pedurungan</option>
+
+                <!-- Provinsi DI Yogyakarta -->
+                <option value="malioboro">Malioboro</option>
+                <option value="jetis">Jetis</option>
+                <option value="umbulharjo">Umbulharjo</option>
+
+                <!-- Provinsi Jawa Timur -->
+                <option value="wonokromo">Wonokromo</option>
+                <option value="tegalsari">Tegalsari</option>
+                <option value="genteng">Genteng</option>
+
+                <!-- Provinsi Bali -->
+                <option value="denpasar_barat">Denpasar Barat</option>
+                <option value="denpasar_timur">Denpasar Timur</option>
+                <option value="denpasar_selatan">Denpasar Selatan</option>
+
+                <!-- Provinsi Kalimantan Timur -->
+                <option value="samarinda_utara">Samarinda Utara</option>
+                <option value="balikpapan_kota">Balikpapan Kota</option>
+                <option value="sungai_kunjang">Sungai Kunjang</option>
+
+                <!-- Provinsi Sulawesi Selatan -->
+                <option value="panakkukang">Panakkukang</option>
+                <option value="ujung_pandang">Ujung Pandang</option>
+                <option value="tamalanrea">Tamalanrea</option>
+
+                <!-- Provinsi Papua -->
+                <option value="jayapura_utara">Jayapura Utara</option>
+                <option value="abepura">Abepura</option>
+                <option value="sentani">Sentani</option>
+            </select>
+
+            <br>
+
+            <label>Kelurahan</label>
+            <select name="pilihKelurahan">
+                <!-- Provinsi DKI Jakarta -->
+                <option value="gambir">Gambir</option>
+                <option value="menteng">Menteng</option>
+                <option value="kebon_melati">Kebon Melati</option>
+
+                <!-- Provinsi Jawa Barat -->
+                <option value="cibadak">Cibadak</option>
+                <option value="sukamaju">Sukamaju</option>
+                <option value="cimahi">Cimahi</option>
+
+                <!-- Provinsi Jawa Tengah -->
+                <option value="pandanaran">Pandanaran</option>
+                <option value="karanganyar">Karanganyar</option>
+                <option value="purwosari">Purwosari</option>
+
+                <!-- Provinsi Jawa Timur -->
+                <option value="ketintang">Ketintang</option>
+                <option value="wonokromo">Wonokromo</option>
+                <option value="dukuh_pakis">Dukuh Pakis</option>
+
+                <!-- Provinsi Bali -->
+                <option value="ubud">Ubud</option>
+                <option value="kuta">Kuta</option>
+                <option value="sanur">Sanur</option>
+            </select>
+            <br>
+            <label for="">Alamat</label>
+            <textarea rows="10" cols="50" required>Alamat Lengkap</textarea>
+            <br>
+            <br>
+        </fieldset>    
+        
+        <br>
+        <br>
+
+        <fieldset>
+            <legend><b>Akun</b></legend>
+            <br>
+
+            <label for="">Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="">Username</label>
+            <input type="text" name="fullname" required maxlength="10">
+            <br>
+            <label for="">Password</label>
+            <input type="password" name="password" required>
+            <br>
+            <br>
+        </fieldset>
+            
+        <br>
+        <br>
+            
+        <fieldset>
+            <legend><b>Syarat dan Ketentuan</b></legend>
+            <br>
+
+            <h5>Dengan memilih "Setuju" anda sudah mengikuti <a href="page-tugas.html">Syarat dan Ketentuan</a> yang berlaku</h5>
+            <input type="checkbox" name="setuju" value="setuju" required> <b>Setuju</b><br>
+            <br>
+            <br>
+            <input type="reset" name="reset" value="Reset">
+            <input type="submit" name="submit" value="Kirim">
+            <br>
+        </fieldset>
+
+        
+    </form>
+</body>
+</html>
